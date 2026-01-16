@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "山田 太郎",
+    "email": "yamada@example.com",
+    "subject": "製品について質問",
+    "message": "製品の保証期間について教えてください。",
+    "status": "新規",
+    "createdAt": "2026-01-15T10:30:00Z",
+    "updatedAt": "2026-01-15T10:30:00Z"
+  },
+  {
+    "id": "2",
+    "name": "佐藤 花子",
+    "email": "sato@example.com",
+    "subject": "配送状況の確認",
+    "message": "注文した商品がまだ届きません。配送状況を確認してください。",
+    "status": "対応中",
+    "createdAt": "2026-01-14T14:20:00Z",
+    "updatedAt": "2026-01-15T09:00:00Z"
+  },
+  {
+    "id": "3",
+    "name": "鈴木 一郎",
+    "email": "suzuki@example.com",
+    "subject": "返品について",
+    "message": "購入した商品を返品したいのですが、手続き方法を教えてください。",
+    "status": "完了",
+    "createdAt": "2026-01-13T09:15:00Z",
+    "updatedAt": "2026-01-14T16:45:00Z"
+  },
+  {
+    "id": "4",
+    "name": "田中 美咲",
+    "email": "tanaka@example.com",
+    "subject": "アカウントについて",
+    "message": "パスワードをリセットしたいです。",
+    "status": "新規",
+    "createdAt": "2026-01-15T08:00:00Z",
+    "updatedAt": "2026-01-15T08:00:00Z"
+  },
+  {
+    "id": "5",
+    "name": "高橋 健太",
+    "email": "takahashi@example.com",
+    "subject": "サービスへのフィードバック",
+    "message": "いつも素晴らしいサービスをありがとうございます。一点改善提案があります。",
+    "status": "対応中",
+    "createdAt": "2026-01-12T11:30:00Z",
+    "updatedAt": "2026-01-15T10:00:00Z"
+  }
+]
