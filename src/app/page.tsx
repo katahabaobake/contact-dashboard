@@ -1,9 +1,10 @@
 import { ContactList } from "@/components/ContactList";
-import { Contact } from "@/types/contact";
-import contactsData from "@/data/contacts.json";
+import { getAllContacts } from "@/lib/contacts";
+
+export const dynamic = "force-dynamic";
 
 export default function Home() {
-  const contacts: Contact[] = contactsData as Contact[];
+  const contacts = getAllContacts();
 
   return (
     <div className="min-h-screen bg-gray-100">

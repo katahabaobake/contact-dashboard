@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import { ContactDetail } from "@/components/ContactDetail";
-import { Contact } from "@/types/contact";
-import contactsData from "@/data/contacts.json";
+import { getContactById } from "@/lib/contacts";
+
+export const dynamic = "force-dynamic";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -9,8 +10,7 @@ interface PageProps {
 
 export default async function ContactPage({ params }: PageProps) {
   const { id } = await params;
-  const contacts: Contact[] = contactsData as Contact[];
-  const contact = contacts.find((c) => c.id === id);
+  const contact = getContactById(id);
 
   if (!contact) {
     notFound();
@@ -23,11 +23,4 @@ export default async function ContactPage({ params }: PageProps) {
       </div>
     </div>
   );
-}
-
-export async function generateStaticParams() {
-  const contacts: Contact[] = contactsData as Contact[];
-  return contacts.map((contact) => ({
-    id: contact.id,
-  }));
 }
